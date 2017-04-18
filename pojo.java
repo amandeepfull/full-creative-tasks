@@ -3,11 +3,8 @@ import java.util.*;
 
 interface Getter_Setter
 {
-	public void putValue(String,String,String,String);
-	public String getBusiness();
-	public String getWork();
-	public String getHome();
-	public String getAddress();
+	public void putValue(String buss,String wo,String ho,String Add);
+	
 }
 
 class Directory implements Getter_Setter{
@@ -23,24 +20,7 @@ class Directory implements Getter_Setter{
 		home=ho;
 		Address=Add;
 	}
-	
-	public String getBusiness()
-	{
-		return bussiness;
-	}
-	public String getWork()
-	{
-		return work;
-	}
-	public String getHome()
-	{
-		return home;
-	}
-	public String getAddress()
-	{
-		return Address;
-	}
-	
+		
 	public String toString()
 	{
 		System.out.println("######################Your Contact Details#####################");
@@ -118,10 +98,11 @@ System.out.println();
 						contacts.remove(na);
 						System.out.println("###########Contact removed Successfully############3");
 					}
-					else{
+					else
+					{
 						System.out.println("###########No such element Found#########");
 					}
-					System.out.println();
+						System.out.println();
 					
 		break;
 		
