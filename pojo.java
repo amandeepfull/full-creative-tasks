@@ -1,6 +1,16 @@
 import java.io.*;
 import java.util.*;
-class Directory{
+
+interface Getter_Setter
+{
+	public void putValue(String,String,String,String);
+	public String getBusiness();
+	public String getWork();
+	public String getHome();
+	public String getAddress();
+}
+
+class Directory implements Getter_Setter{
 	
 	String bussiness;
 	String work;
