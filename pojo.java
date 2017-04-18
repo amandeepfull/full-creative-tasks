@@ -1,19 +1,15 @@
 import java.io.*;
 import java.util.*;
 
-interface Getter_Setter
-{
-	public void putValue(String buss,String wo,String ho,String Add);
-	
-}
 
-class Directory implements Getter_Setter{
+
+class Directory {
 	
 	String bussiness;
 	String work;
 	String home;
 	String Address;
-	public void putValue(String buss,String wo,String ho,String Add)
+ Directory(String buss,String wo,String ho,String Add)
 	{
 		bussiness=buss;
 		work=wo;
@@ -55,9 +51,9 @@ System.out.println("Enter your choice:	");
 					String hom=br.readLine();
 					System.out.println("Enter Your Address	");
 					String ad=br.readLine();
-					Directory d=new Directory();
-					d.putValue(bus,wo,hom,ad);
-					contacts.put(name,d);
+					
+					
+					contacts.put(name,new Directory(bus,wo,hom,ad));
 System.out.println();					
 						break;
 		case 2: 
