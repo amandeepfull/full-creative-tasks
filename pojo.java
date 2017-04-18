@@ -67,7 +67,8 @@ System.out.println("Enter your choice:	");
 					String ad=br.readLine();
 					Directory d=new Directory();
 					d.putValue(bus,wo,hom,ad);
-					contacts.put(name,d);	
+					contacts.put(name,d);
+System.out.println();					
 						break;
 		case 2: 
 					System.out.println("Enter the name U want to Search:	");
@@ -82,6 +83,7 @@ System.out.println("Enter your choice:	");
 					{
 						System.out.println("Sorry no any contact Available!!!!!!!!!!!!!!!!!11");
 					}
+					System.out.println();
 					
 					break;
 		case 3: 
@@ -94,9 +96,22 @@ System.out.println("Enter your choice:	");
 					}
 					
 					System.out.println("#########################");
+					System.out.println();
 						break;
 			
 		case 4: 
+					System.out.println("Enter the Contact name U want to Delete:	");
+					String na=br.readLine();
+					System.out.println();
+					if(contacts.containsKey(na))
+					{
+						contacts.remove(na);
+						System.out.println("###########Contact removed Successfully############3");
+					}
+					else{
+						System.out.println("###########No such element Found#########");
+					}
+					System.out.println();
 					
 		break;
 		
@@ -106,6 +121,7 @@ System.out.println("Enter your choice:	");
 		break;
 						
 		 default:	System.out.println("Enter the valid Choice:	");
+						System.out.println();
 	
 	}
 
