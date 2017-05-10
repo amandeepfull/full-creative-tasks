@@ -6,9 +6,11 @@ class PerfectArray
 public static void main(String agr[])
 {
 Scanner sc=new Scanner(System.in);
+System.out.println("Enter the Size of Array :");
 int n=sc.nextInt();
 int arr[]=new int[n];
 HashSet<Integer> values=new HashSet<Integer>();
+System.out.println("Enter the Elements in Array:	");
 for(int i=0;i<n;i++)
 {
 	arr[i]=sc.nextInt();
@@ -40,3 +42,44 @@ else
 
 }
 }
+
+
+/*
+..........................................................................................
+#0 TestCase 
+
+Input:
+
+Enter the Size of Array :
+5
+Enter the Elements in Array:	
+1
+4
+7
+2
+8
+
+Output:
+
+Array is not perfect
+
+.......................................................................................
+
+#1 TestCase
+
+Input:
+
+Enter the Size of Array :
+5
+Enter the Elements in Array:	
+1
+2
+3
+4
+5
+
+Output:
+
+Array is perfect
+.........................................................................................
+*/
