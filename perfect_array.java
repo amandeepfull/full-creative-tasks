@@ -14,19 +14,22 @@ System.out.println("Enter the Elements in Array:	");
 for(int i=0;i<n;i++)
 {
 	arr[i]=sc.nextInt();
-	values.add(arr[i]);
+	
 }
 int count=0;
 for(int i=0;i<n;i++)
 {
 	for(int j=i+1;j<n;j++)
 	{
+		values.add(arr[i]);
+		values.add(arr[j]);
 		int add=arr[i]+arr[j];
 		if(values.contains(add))
 		{
 			count++;
 			
 		}
+		values.clear();
 	}
 	
 
@@ -53,15 +56,15 @@ Input:
 Enter the Size of Array :
 5
 Enter the Elements in Array:	
-1
-4
-7
+0
 2
-8
+4
+0
+7
 
 Output:
 
-Array is not perfect
+Array is perfect
 
 .......................................................................................
 
@@ -80,6 +83,6 @@ Enter the Elements in Array:
 
 Output:
 
-Array is perfect
+Array is not perfect
 .........................................................................................
 */
