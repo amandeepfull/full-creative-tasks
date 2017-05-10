@@ -77,7 +77,7 @@ public void area()
 }
 
 
-class driver
+oublic class driver
 {
 	public static void main(String ar[])
 	{
