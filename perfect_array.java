@@ -9,7 +9,6 @@ Scanner sc=new Scanner(System.in);
 System.out.println("Enter the Size of Array :");
 int n=sc.nextInt();
 int arr[]=new int[n];
-HashSet<Integer> values=new HashSet<Integer>();
 System.out.println("Enter the Elements in Array:	");
 for(int i=0;i<n;i++)
 {
@@ -21,15 +20,14 @@ for(int i=0;i<n;i++)
 {
 	for(int j=i+1;j<n;j++)
 	{
-		values.add(arr[i]);
-		values.add(arr[j]);
-		int add=arr[i]+arr[j];
-		if(values.contains(add))
+		int a=arr[i];
+		int b=arr[j];
+		int add=a+b;
+		if(add==a || add==b)
 		{
 			count++;
 			
 		}
-		values.clear();
 	}
 	
 
