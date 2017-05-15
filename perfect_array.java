@@ -18,21 +18,22 @@ for(int i=0;i<n;i++)
 int count=0;
 for(int i=0;i<n;i++)
 {
-	for(int j=i+1;j<n;j++)
-	{
-		int a=arr[i];
-		int b=arr[j];
-		int add=a+b;
-		if(add==a || add==b)
+	
+		if(arr[i]==0)
 		{
 			count++;
+			if(count>1)
+			{
+				break;
+			}
+			
 			
 		}
 	}
 	
 
-}
-if(count>2)
+
+if(count==1)
 {
 	System.out.println("Array is perfect");
 }
