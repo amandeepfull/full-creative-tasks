@@ -10,42 +10,21 @@ System.out.println("Enter the Size of Array :");
 int n=sc.nextInt();
 int arr[]=new int[n];
 System.out.println("Enter the Elements in Array:	");
+HashSet<Integer> values=new HashSet<Integer>();
 for(int i=0;i<n;i++)
 {
 	arr[i]=sc.nextInt();
-	
+	values.add(arr[i]);
 }
-int count=0;
-for(int i=0;i<n;i++)
-{
-	
-		if(arr[i]==0)
-		{
-			count++;
-			if(count>1)
-			{
-				break;
-			}
-			
-			
-		}
-	}
-	
 
-
-if(count==1)
-{
+if(values.contains(0))
 	System.out.println("Array is perfect");
-}
+
 else
-{
 	System.out.println("Array is not perfect");
 }
 
 }
-}
-
-
 /*
 ..........................................................................................
 #0 TestCase 
